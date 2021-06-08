@@ -1,0 +1,354 @@
+/*
+filename: style.css
+author: Pham Hai Long - Max
+created: 17/3/2019
+last modified: 23/3/2019
+description: index.html
+*/
+
+/*general rule*/
+*   {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100%;
+}
+
+/*body background*/
+body{
+    background-image: url("images/civil-engineering1.jpg");
+}
+
+/*nav's style*/
+nav{
+    width: 100%;
+    height: 75px;
+    background-color: rgb(255, 255, 255);
+}
+
+/*header for main page*/
+h1{
+    margin-top: 50px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 400%;
+}
+
+/*block storing the logo and header for main page*/
+#title-block{
+    display: block;
+    text-align: center;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    padding-bottom: 10px;
+    background-image: url("images/title-background.jpg");
+}
+
+/*header*/
+#main-title{
+    display: inline-block;
+    font-family: sans-serif;
+    margin-left: 25px;
+    line-height: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 2px solid black;
+    background: white;
+}
+
+/*logo next to header*/
+#title-logo{
+    border: 5px solid black;
+    vertical-align: middle;
+}
+
+/*buttons in the menu*/
+.button-menu{
+    border-right: 1px solid gray;
+}
+
+/*specifically the first button*/
+.button-menu-first{
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
+}
+
+/*styling for the menu*/
+.menu-bar li{
+    list-style: none;
+    display: inline-block;
+    float: left;
+    line-height: 75px;
+}
+
+/*styling for the buttons' texts*/
+.menu-bar li a, .back-to-top a{
+    display:block;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    padding: 0 20px;
+    font-weight: bold;
+}
+
+/*hover effect for the menu buttons*/
+.menu-bar li a:hover, .menu-bar li .current-tab, .back-to-top a:hover{
+    color: rgb(63, 228, 41);
+    transform: rotateX(30deg);
+    text-decoration: underline;
+}
+
+/*home page logo (upper left corner)*/
+.logo{
+    float: left;
+    position: relative;
+    margin: 0;
+    border-right: 1px gray;
+    border-left: 1px gray;
+}
+
+/*the line at the bottom of the menu button*/
+hr{
+    color: gray;
+}
+
+/*container for image and text (1 and 3)*/
+.container{
+    display: block;
+    text-align: left;
+    width: 80%;
+    height: 300px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 7%;
+    margin-left:10%;
+    margin-top:3%;
+}
+
+/*Image 1*/
+.header-image{
+    height: 300px;
+    float:left;
+    width: 44%;
+    vertical-align: middle;
+}
+
+/*Textbox 1*/
+.header-textbox{
+    float: right;
+    width:51%;
+    font-family: sans-serif;
+    font-size: 100%;
+    line-height: 30px;
+    vertical-align: center;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+/*Image 2*/
+.header-image2{
+    height: 300px;
+    float:right;
+    width: 44%;
+    vertical-align: middle;
+}
+
+/*Textbox 2*/
+.header-textbox2{
+    float: left;
+    width:51%;
+    font-family: sans-serif;
+    font-size: 100%;
+    line-height: 30px;
+    vertical-align: center;
+    margin-left: 5%;
+    margin-top: 8%;
+}
+
+
+/*Textbox 3*/
+.header-textbox3{
+    float: right;
+    width:46%;
+    font-family: sans-serif;
+    font-size: 100%;
+    line-height: 30px;
+    vertical-align: center;
+    margin-left: 5%;
+    margin-top: 8%;
+    margin-right: 5%;
+}
+
+/*Styling the back to top button (at the end of page)*/
+.back-to-top{
+    height: 30px;
+    width: 30%;
+    margin-left: 35%;
+    margin-bottom: 2%;
+    border: 2px solid black;
+    border-radius: 2em;
+    text-align: center;
+    background-color: white;
+}
+
+/*icons on top right corner*/
+.fb-icon{
+    float: right;
+    padding-top: 17.5px;
+    padding-right: 50px;
+}
+
+.email-icon{
+    float: right;
+    padding-right: 20px;
+    padding-top: 17.5px;
+}
+
+/*positioning the form in the Apply tab*/
+fieldset{
+    margin-left: 10%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 80%;
+    padding: 25px;
+    line-height: 1.6;
+}
+
+/*blank space for form*/
+.fill-in-box{
+    padding-left: 20px;
+}
+
+/*styling the fieldset for form*/
+.form-field{
+    background: white;
+}
+
+legend strong{
+    font-size: 150%;
+}
+
+.legend-box{
+    background: white;
+    border: 1px solid gray;
+    padding: 12px;
+}
+
+/*styling headings for 4 pages other than homepage*/
+.headings{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 40%;
+    margin-right: 40%;
+    border: 5px solid black;
+    padding: 20px;
+    background-color: white;
+}
+
+/*content-box holds the paragraphs in the page*/
+.content-box{
+    border: 2px solid black;
+    background-color: white;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 5%;
+}
+
+/*styling the list of content*/
+.ul2 li, .ol2 li{
+    margin-left: 5%;
+}
+
+/*styling the notes/aside tag*/
+aside{
+    font-style: italic;
+    width: 25%;
+    float: right;
+    font-size: 0.8em;
+    border: 3px solid gray;
+    border-radius: 10px;
+    padding: 0.5em;
+    margin-top: 50%;
+}
+
+/*styling the submit button*/
+.submit-button{
+    margin-left: 10%;
+    padding: 1%;
+}
+
+/*styling the definition list. The email has the same styling so I group selected.*/
+dl, #my-email{
+    font-weight: bold;
+}
+
+.ditme{
+    width: 100% !important;
+    table-layout:fixed;
+}
+
+/*styling the timetable*/
+table, th, td
+{
+    empty-cells: hide;
+    border: 2px solid black;
+    clear: both;
+}
+
+th{
+    font-size: 95%;
+    padding: 3px;
+    border-top: none;
+    border-bottom: none;
+    text-align: center;
+}
+
+td{
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-all;
+    hyphens: auto;
+    padding: 5px;
+    text-align: center;
+    font-weight: normal;
+    width: 18%;
+    background-color: #00FFFF;
+}
+
+/*last minute styling. I'll be demonstrating what these do. I AM SO SAD :<*/
+footer{
+    width: 100%;
+    clear: both;
+    text-align: center;
+    font-size: 80%;
+}
+
+.left-float{
+    width: 70%;
+}
+
+dt{
+    float: left;
+    width: 30%;
+}
+
+dd{
+    float: right;
+    width: 30%;
+    font-weight: normal;
+}
+
+figure{
+    float: right;
+    border: 10px ridge gray;
+}
+
+h4{
+    font-size: 200%;
+}
+
+h5{
+    font-size:200%;
+    clear: both;
+}
